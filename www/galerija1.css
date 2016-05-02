@@ -1,0 +1,103 @@
+@font-face{
+   font-family:"URW Gothic L Book";
+   src:url("fonts/urw_gothic_l_book.eot");
+   src:url("fonts/urw_gothic_l_book.ttf") format("truetype");
+}
+@-webkit-keyframes move_stars {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  20% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  40% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  55% {background-position: 1000px 1000px, 400px 600px, -100px 450px;}
+  80% {background-position: 1800px 800px, 400px 500px, -100px 600px;}
+  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+@-moz-keyframes move_stars {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  20% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  40% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  55% {background-position: 1000px 1000px, 400px 600px, -100px 450px;}
+  80% {background-position: 1800px 800px, 400px 500px, -100px 600px;}
+  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+@-ms-keyframes move_stars {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  20% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  40% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  55% {background-position: 1000px 1000px, 400px 600px, -100px 450px;}
+  80% {background-position: 1800px 800px, 400px 500px, -100px 600px;}
+  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+@keyframes move_stars {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  20% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  40% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  55% {background-position: 1000px 1000px, 400px 600px, -100px 450px;}
+  80% {background-position: 1800px 800px, 400px 500px, -100px 600px;}
+  100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+body{
+   /*background-color:#080809;*/
+   background:url("images/stars.jpg");
+   text-align:center;
+   -webkit-animation: move_stars 80s linear infinite;
+   -moz-animation: move_stars 80s linear infinite;
+   -ms-animation: move_stars 80s linear infinite;
+   animation: move_stars 80s linear infinite;
+}
+img.gal{
+   height:225px;
+   width:320px;
+   background-color:black;
+   border:4px solid #00032D;
+   display:inline-block;
+   margin:3px;
+   margin-left:auto;
+   margin-right:auto;
+}
+div.nav{
+   border-radius:50px;
+   /*background-color:lightgreen;*/
+   background:url("images/nebula.png");
+   height:80px;
+   width:200px;
+   border:3px solid #433484;
+   display:inline-block;
+   margin-left:40px;
+   margin-top:5px;
+   line-height:80px;
+   text-align:center;
+   font-size:25pt;
+   font-family:URW Gothic L Book;
+   color:white;
+}
+div.nav:hover{
+   border-radius:20px;
+   -webkit-transform:scale(1.3);
+   -ms-transform:scale(1.3);
+   transform:scale(1.3);
+   cursor:pointer;
+}
+div.navp{
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+   width:500px;
+}
+#dgal{
+   margin-top:50px;
+   opacity:0.7;
+}
+img.prev{
+   margin-left:auto;
+   margin-right:auto;
+   max-height:680px;
+   max-width:950px;
+   width:auto;
+   height:auto;
+}
+#dprev{
+   opacity:0.8;
+}
+img.gal:hover{
+   cursor:pointer;
+}
